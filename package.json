@@ -1,0 +1,19 @@
+{
+  "name": "functional-js-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tests.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theSuiGenerisAakash/functional-js-workshop.git"
+  },
+  "author": "Aakash Verma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theSuiGenerisAakash/functional-js-workshop/issues"
+  },
+  "homepage": "https://github.com/theSuiGenerisAakash/functional-js-workshop#readme"
+}

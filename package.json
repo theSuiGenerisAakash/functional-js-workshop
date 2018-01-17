@@ -15,5 +15,9 @@
     "url": "https://github.com/theSuiGenerisAakash/functional-js-workshop/issues"
   },
   "homepage": "https://github.com/theSuiGenerisAakash/functional-js-workshop#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-google": "^0.9.1"
+  }
 }

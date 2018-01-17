@@ -11,7 +11,7 @@
 let messagePass = { message : "Yes" };
 let messageFail = { message : "hdashdhabdasbdasjdnbnjdansdhjdhasjdhasjdhajksdhajshdjkahdjahdjahajhjashajdhadhjasdhasjdhajsdhjashdjk" };
 let messagePass2 = { message : "Aakash", blablabla : 3 };
-console.log("The function should return ", messagePass.message, " for two objects ", messagePass, " and  ", messageFail," : ", fourth([messagePass, messageFail]).toString() === "Yes"); 
+console.log("The function should return ", messagePass.message, " for two objects ", messagePass, " and  ", messageFail," : ", fourth([messagePass, messageFail]).toString() === "Yes");
 console.log("The function should return ", messagePass.message, " and ", messagePass2.message, " for three objects ", messagePass, ", ", messagePass2, " and  ", messageFail," : ", fourth([messagePass, messageFail, messagePass2]).toString() === "Yes,Aakash"); */
 
 let fifth = require('./closureProg');

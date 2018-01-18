@@ -1,13 +1,13 @@
-//let first = require('./upperCase');
-//console.log("The string 'asb' should give 'ASB': ",first('asb')==='ASB');
+// let first = require('./upperCase');
+// console.log("The string 'asb' should give 'ASB': ",first('asb')==='ASB');
 
-//let second = require('./repeat');
-//console.log("The function should be repeated thrice:", second(() => { console.log("Printing... "); }, 3) === 3);
+// let second = require('./repeat');
+// console.log("The function should be repeated thrice:", second(() => { console.log("Printing... "); }, 3) === 3);
 
-//let third = require('./mapFunc');
-//console.log("The function should return [2,4,6] for [1,2,3]: ", third([1,2,3]).toString() === "2,4,6");
+// let third = require('./mapFunc');
+// console.log("The function should return [2,4,6] for [1,2,3]: ", third([1,2,3]).toString() === "2,4,6");
 
-/*let fourth = require('./getShortMessages.js');
+/* let fourth = require('./getShortMessages.js');
 let messagePass = { message : "Yes" };
 let messageFail = { message : "hdashdhabdasbdasjdnbnjdansdhjdhasjdhasjdhajksdhajshdjkahdjahdjahajhjashajdhadhjasdhasjdhajsdhjashdjk" };
 let messagePass2 = { message : "Aakash", blablabla : 3 };
@@ -30,13 +30,10 @@ console.log("The function should return ", messagePass.message, " and ", message
 // let inputWords2 = [];
 // let inputWords3 = ['', ''];
 // let inputWords4 = ['Apple', 'Banana', 'Apple', 'durian', 'Durian', 'Durian'];
-// console.log("The array ['Apple', 'Banana', 'Apple', 'Durian', 'Durian', 'Durian'] should return { Apple : 2, Durian : 3, Banana : 1}: ", JSON.stringify(fifth(inputWords)) === '{"Apple":2,"Banana":1,"Durian":3}' );
-// console.log("The array [] should return {}: ", JSON.stringify(fifth(inputWords2)) === '{}');
-// console.log("The array ['', ''] should return { '' : 2}: ", JSON.stringify(fifth(inputWords3)) === '{"":2}');
-// console.log("The array ['Apple', 'Banana', 'Apple', 'durian', 'Durian', 'Durian'] should not return { Apple : 2, Durian : 3, Banana : 1}: ", JSON.stringify(fifth(inputWords4)) !== '{"Apple":2,"Banana":1,"Durian":3}');
+// console.log("The array ['Apple', 'Banana', 'Apple', 'Durian', 'Durian', 'Durian'] should return { Apple : 2, Durian : 3, Banana : 1}: ", JSON.stringify(sixth(inputWords)) === '{"Apple":2,"Banana":1,"Durian":3}' );
+// console.log("The array [] should return {}: ", JSON.stringify(sixth(inputWords2)) === '{}');
+// console.log("The array ['', ''] should return { '' : 2}: ", JSON.stringify(sixth(inputWords3)) === '{"":2}');
+// console.log("The array ['Apple', 'Banana', 'Apple', 'durian', 'Durian', 'Durian'] should not return { Apple : 2, Durian : 3, Banana : 1}: ", JSON.stringify(sixth(inputWords4)) !== '{"Apple":2,"Banana":1,"Durian":3}');
 
-let seventh = require('./recurProg');
-let arrayRec = ['Apple', 'Banana', 'Apple'];
-let func1 = function(prev, curr, index, arrayRec){ return prev + curr; };
-console.log("The  function ", func1," should return 'AppleBananaApple' for the array ", arrayRec, " : ", JSON.stringify(seventh(arrayRec, func1, "")) === JSON.stringify("AppleBananaApple"));
-// console.log("The array [] should return {}: ", JSON.stringify(fifth(inputWords2)) === '{}');");
+let seventh = require('./duckCount');
+console.log("Given two objects with own properties 'quack' and one with inherited property 'quack', the function should return 2: ", seventh({quack:true}, {quack: true}, Object.create({quack:false} )) === 2);

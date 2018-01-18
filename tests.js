@@ -37,3 +37,4 @@ console.log("The function should return ", messagePass.message, " and ", message
 
 let seventh = require('./duckCount');
 console.log("Given two objects with own properties 'quack' and one with inherited property 'quack', the function should return 2: ", seventh({quack:true}, {quack: true}, Object.create({quack:false} )) === 2);
+console.log("Given two objects with own properties 'quack' and one empty object, the function should return 2: ", seventh({quack:true}, {quack: true}, {}) === 2);

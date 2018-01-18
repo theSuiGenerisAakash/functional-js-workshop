@@ -35,6 +35,9 @@ console.log("The function should return ", messagePass.message, " and ", message
 // console.log("The array ['', ''] should return { '' : 2}: ", JSON.stringify(sixth(inputWords3)) === '{"":2}');
 // console.log("The array ['Apple', 'Banana', 'Apple', 'durian', 'Durian', 'Durian'] should not return { Apple : 2, Durian : 3, Banana : 1}: ", JSON.stringify(sixth(inputWords4)) !== '{"Apple":2,"Banana":1,"Durian":3}');
 
-let seventh = require('./duckCount');
-console.log("Given two objects with own properties 'quack' and one with inherited property 'quack', the function should return 2: ", seventh({quack:true}, {quack: true}, Object.create({quack:false} )) === 2);
-console.log("Given two objects with own properties 'quack' and one empty object, the function should return 2: ", seventh({quack:true}, {quack: true}, {}) === 2);
+// let seventh = require('./duckCount');
+// console.log("Given two objects with own properties 'quack' and one with inherited property 'quack', the function should return 2: ", seventh({quack:true}, {quack: true}, Object.create({quack:false} )) === 2);
+// console.log("Given two objects with own properties 'quack' and one empty object, the function should return 2: ", seventh({quack:true}, {quack: true}, {}) === 2);
+
+let eight = require('./parApply');
+console.log("Given a non-empty string 'Aakash', it should print INFO: Aakash", eight('INFO')('Aakash') === undefined ? "" : "" );

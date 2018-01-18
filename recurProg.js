@@ -1,6 +1,6 @@
 /**
 */
-function reduce(arrayRec, fn, initial) {
+function reduce(arrayRec, fn, initial, idx) {
   if (arrayRec.length === 0) {
     return initial;
   }

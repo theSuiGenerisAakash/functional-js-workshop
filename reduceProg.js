@@ -1,6 +1,7 @@
 function reduceFunc(inputWords) {
   return inputWords.reduce((stringAccumulator, currentString) => {
- stringAccumulator[currentString] = stringAccumulator[currentString]+1 || 1; return stringAccumulator;
+ stringAccumulator[currentString] = stringAccumulator[currentString]+1 || 1;
+ return stringAccumulator;
 }, {});
 }
 module.exports = reduceFunc;

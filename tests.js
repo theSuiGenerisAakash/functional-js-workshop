@@ -44,3 +44,11 @@ console.log("Given a non-empty string 'Aakash', it should print INFO: Aakash", e
 console.log("Given an empty string', it should print INFO:", eight('INFO')('') === undefined ? "" : "" );
 console.log("Given nothing', it should print undefined", eight()() === undefined ? "" : "" );
 console.log("Given two strings 'Aakash' and 'Verma', it should print undefined Aakash Verma", eight()('Aakash','Verma') === undefined ? "" : "" );
+console.log("Checking if function was returned:", typeof(eight()) === 'function');
+
+
+// const nine = require('./withBind');
+// console.log("Given a non-empty string 'Aakash', it should print INFO: Aakash", nine('INFO')('Aakash') === undefined ? "" : "" );
+// console.log("Given an empty string', it should print INFO:", nine('INFO')('') === undefined ? "" : "" );
+// console.log("Given nothing', it should print undefined", nine()() === undefined ? "" : "" );
+// console.log("Given two strings 'Aakash' and 'Verma', it should print undefined Aakash Verma", nine()('Aakash','Verma') === undefined ? "" : "" );

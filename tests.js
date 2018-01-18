@@ -41,3 +41,6 @@ console.log("The function should return ", messagePass.message, " and ", message
 
 let eight = require('./parApply');
 console.log("Given a non-empty string 'Aakash', it should print INFO: Aakash", eight('INFO')('Aakash') === undefined ? "" : "" );
+console.log("Given an empty string', it should print INFO:", eight('INFO')('') === undefined ? "" : "" );
+console.log("Given nothing', it should print undefined", eight()() === undefined ? "" : "" );
+console.log("Given two strings 'Aakash' and 'Verma', it should print undefined Aakash Verma", eight()('Aakash','Verma') === undefined ? "" : "" );

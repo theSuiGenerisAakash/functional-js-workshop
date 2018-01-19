@@ -53,3 +53,5 @@ console.log("The function should return ", messagePass.message, " and ", message
 // console.log("Given nothing', it should print undefined", nine()() === undefined ? "" : "" );
 // console.log("Given two strings 'Aakash' and 'Verma', it should print undefined Aakash Verma", nine()('Aakash','Verma') === undefined ? "" : "" );
 // console.log("Checking if function was returned:", typeof(nine()) === 'function');
+
+const ten = require('./tramp');

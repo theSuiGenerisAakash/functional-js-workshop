@@ -1,23 +1,23 @@
-// function duckCount() {
-//   // SOLUTION GOES HERE
-//   console.log(arguments['0']);
-//   let lengthArgs = Object.keys(arguments).map(function(key){
-//       console.log(arguments[key];
-//       if(arguments[key].hasOwnProperty('quack'))
-//         return arguments[key];
-//   });
-//   console.log(lengthArgs.length);
-// }
-//
-// console.log(duckCount({'quack': true})===[{ '0' : {"quack": true}}]);
-
 function duckCount() {
   // SOLUTION GOES HERE
-  let args = [].slice.call(arguments);
-  let numberOfOwnQuacks = args.filter(function(arg){
-    return Object.prototype.hasOwnProperty.call(arg, 'quack') ;
+  console.log(arguments);
+  let lengthArgs = Object.keys(arguments).map(function(key){
+      console.log(arguments);
+      if(arguments[key].hasOwnProperty('quack'))
+        return arguments[key];
   });
-  return numberOfOwnQuacks.length;
+  console.log(lengthArgs.length);
 }
 
- module.exports = duckCount
+console.log(duckCount({'quack': true})===[{ '0' : {"quack": true}}]);
+
+// function duckCount() {
+//   // SOLUTION GOES HERE
+//   let args = [].slice.call(arguments);
+//   let numberOfOwnQuacks = args.filter(function(arg){
+//     return Object.prototype.hasOwnProperty.call(arg, 'quack') ;
+//   });
+//   return numberOfOwnQuacks.length;
+// }
+//
+//  module.exports = duckCount

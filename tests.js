@@ -39,12 +39,12 @@ console.log("The function should return ", messagePass.message, " and ", message
 // console.log("Given two objects with own properties 'quack' and one with inherited property 'quack', the function should return 2: ", seventh({quack:true}, {quack: true}, Object.create({quack:false} )) === 2);
 // console.log("Given two objects with own properties 'quack' and one empty object, the function should return 2: ", seventh({quack:true}, {quack: true}, {}) === 2);
 
-let eight = require('./parApply');
-console.log("Given a non-empty string 'Aakash', it should print INFO: Aakash", eight('INFO')('Aakash') === undefined ? "" : "" );
-console.log("Given an empty string', it should print INFO:", eight('INFO')('') === undefined ? "" : "" );
-console.log("Given nothing', it should print undefined", eight()() === undefined ? "" : "" );
-console.log("Given two strings 'Aakash' and 'Verma', it should print undefined Aakash Verma", eight()('Aakash','Verma') === undefined ? "" : "" );
-console.log("Checking if function was returned:", typeof(eight()) === 'function');
+// let eight = require('./parApply');
+// console.log("Given a non-empty string 'Aakash', it should print INFO: Aakash", eight('INFO')('Aakash') === undefined ? "" : "" );
+// console.log("Given an empty string', it should print INFO:", eight('INFO')('') === undefined ? "" : "" );
+// console.log("Given nothing', it should print undefined", eight()() === undefined ? "" : "" );
+// console.log("Given two strings 'Aakash' and 'Verma', it should print undefined Aakash Verma", eight()('Aakash','Verma') === undefined ? "" : "" );
+// console.log("Checking if function was returned:", typeof(eight()) === 'function');
 
 
 // const nine = require('./withBind');
@@ -52,3 +52,4 @@ console.log("Checking if function was returned:", typeof(eight()) === 'function'
 // console.log("Given an empty string', it should print INFO:", nine('INFO')('') === undefined ? "" : "" );
 // console.log("Given nothing', it should print undefined", nine()() === undefined ? "" : "" );
 // console.log("Given two strings 'Aakash' and 'Verma', it should print undefined Aakash Verma", nine()('Aakash','Verma') === undefined ? "" : "" );
+// console.log("Checking if function was returned:", typeof(nine()) === 'function');

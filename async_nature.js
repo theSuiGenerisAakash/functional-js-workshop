@@ -3,14 +3,14 @@
 @param {number} num
 */
 function repeat(operation, num) {
-      // modify this so it can be interrupted
-      if (num <= 0) return;
-      operation();
-      // console.log("once");
-      setTimeout(function() {
+    // modify this so it can be interrupted
+    if (num <= 0) return;
+    operation();
+    // console.log("once");
+    setTimeout(function() {
         console.log('inside setTimeout');
         return repeat(operation, --num);
-      });
+    });
 }
 
 // for(let i=0;i<100;i++){
@@ -21,5 +21,4 @@ function repeat(operation, num) {
 //   console.log("Wait");
 //   }
 // }, 100);
-
 module.exports = repeat;
